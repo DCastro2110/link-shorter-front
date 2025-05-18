@@ -11,6 +11,11 @@ html {
     sans-serif;
 }
 
+@keyframes circle {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
 main {
   height: 100vh;
   display: flex;
@@ -42,6 +47,17 @@ h1 {
 }
 .send-btn:hover {
   filter: brightness(80%);
+}
+.animation {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  background-color: none;
+  border: 1px solid #f2f2f2;
+  border-left: 0;
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .form {
