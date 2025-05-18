@@ -12,8 +12,12 @@ html {
 }
 
 @keyframes circle {
-  0% {transform: rotate(0);}
-  100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 main {
@@ -81,4 +85,39 @@ h1 {
   border-radius: 0.8rem;
   outline: none;
   outline: none;
+}
+
+.result-box {
+  margin-top: 4rem;
+  border-radius: 0.8rem;
+  padding: 2rem 3.2rem;
+  background-color: rgb(15, 103, 204);
+  color: #f2f2f2;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  display: none;
+}
+
+.result {
+  color: #f2f2f2;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.result:visited {
+  color: #f2f2f2;
+}
+
+.clipboard {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #f2f2f2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.2rem;
 }
